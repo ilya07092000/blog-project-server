@@ -15,7 +15,7 @@ model User {
   email         String @unique
   first_name    String
   last_name     String
-  password_hash String
+  password String
   role          Role   @relation(fields: [role_id], references: [id])
   role_id       Int
   posts         Post[]
