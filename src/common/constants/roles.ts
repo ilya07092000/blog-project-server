@@ -4,4 +4,6 @@ const ROLES = {
   MODERATOR: 'MODERATOR',
 };
 
-export { ROLES };
+const DEFAULT_ROLE: keyof typeof ROLES = ROLES.USER as keyof typeof ROLES;
+
+export { ROLES, DEFAULT_ROLE };
